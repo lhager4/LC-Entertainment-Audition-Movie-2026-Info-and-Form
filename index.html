@@ -7,7 +7,7 @@
   <style>
     body {
       font-family: Arial, sans-serif;
-      max-width: 800px;
+      max-width: 850px;
       margin: 40px auto;
       padding: 0 20px;
       line-height: 1.6;
@@ -21,8 +21,29 @@
       box-shadow: 0 2px 6px rgba(0,0,0,0.1);
       margin-bottom: 20px;
     }
-    h1 { color: #111; }
-    .role { border-bottom: 1px solid #eee; padding-bottom: 10px; margin-bottom: 10px; }
+    h1 { color: #111; margin-top: 0; }
+    h2 { color: #111; border-bottom: 2px solid #eee; padding-bottom: 8px; }
+    h3 { color: #333; margin-top: 20px; margin-bottom: 8px; }
+    .role-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+      gap: 10px;
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+    .role-grid li {
+      background: #f4f6f8;
+      padding: 10px 14px;
+      border-radius: 6px;
+      border-left: 4px solid #222;
+      font-weight: 500;
+    }
+    .highlight-role {
+      background: #eef4ff !important;
+      border-left-color: #1a73e8 !important;
+      font-weight: bold !important;
+    }
   </style>
 </head>
 <body>
@@ -34,21 +55,91 @@
 
   <div class="card">
     <h2>Needed Actors &amp; Roles</h2>
-    <div class="role">
-      <h3>Role 1: Lead Character</h3>
-      <p><strong>Age Range:</strong> 18–25 | <strong>Description:</strong> Energetic, expressive, comfortable with dramatic scenes.</p>
-    </div>
-    <div class="role">
-      <h3>Role 2: Supporting Character</h3>
-      <p><strong>Age Range:</strong> 25–40 | <strong>Description:</strong> Calm, grounded presence, strong comedic timing.</p>
-    </div>
+
+    <h3>Lead &amp; Featured Roles</h3>
+    <ul class="role-grid">
+      <li class="highlight-role">Main Character #2 - Boyfriend</li>
+      <li>Sister</li>
+      <li>Chef 1 (Male)</li>
+      <li>Chef 2 (Female)</li>
+      <li>Heckler</li>
+    </ul>
+
+    <h3>Couples</h3>
+    <ul class="role-grid">
+      <li>Girlfriend 1a</li>
+      <li>Boyfriend 1b</li>
+      <li>Boyfriend 2a</li>
+      <li>Boyfriend 2b</li>
+    </ul>
+
+    <h3>Parents</h3>
+    <ul class="role-grid">
+      <li>Mom 1</li>
+      <li>Mom 2</li>
+      <li>Mom 3</li>
+      <li>Mom 4</li>
+      <li>Mom 5</li>
+      <li>Mom 6</li>
+      <li>Dad 1</li>
+      <li>Dad 2</li>
+      <li>Dad 3</li>
+      <li>Dad 4</li>
+      <li>Dad 5</li>
+      <li>Dad 6</li>
+    </ul>
+
+    <h3>Best Friends &amp; Friends</h3>
+    <ul class="role-grid">
+      <li>Best Friend 1</li>
+      <li>Best Friend 2</li>
+      <li>Best Friend 3</li>
+      <li>Best Friend 4</li>
+      <li>Friend 1</li>
+      <li>Friend 2</li>
+      <li>Friend 3</li>
+      <li>Friend 4</li>
+      <li>Friend 5</li>
+      <li>Friend 6</li>
+      <li>Friend 7</li>
+      <li>Friend 8</li>
+      <li>Friend 9</li>
+      <li>Friend 10</li>
+    </ul>
+
+    <h3>Bullies</h3>
+    <ul class="role-grid">
+      <li>Bully 1</li>
+      <li>Bully 2</li>
+      <li>Bully 3</li>
+      <li>Bully 4</li>
+    </ul>
+
+    <h3>Street Performers &amp; Drivers</h3>
+    <ul class="role-grid">
+      <li>Street Performer 1</li>
+      <li>Street Performer 2</li>
+      <li>Street Performer 3</li>
+      <li>Street Performer 4</li>
+      <li>Uber Driver 1</li>
+      <li>Uber Driver 2</li>
+      <li>Uber Driver 3</li>
+    </ul>
+
+    <h3>Extras</h3>
+    <ul class="role-grid">
+      <li class="highlight-role">Background Actors (A LOT needed!)</li>
+    </ul>
   </div>
 
   <div class="card">
     <h2>Audition Submission Form</h2>
-   <iframe data-tally-src="https://tally.so/embed/EqdG42?alignLeft=1&hideTitle=1&transparentBackground=1&dynamicHeight=1" loading="lazy" width="100%" height="100" frameborder="0" marginheight="0" marginwidth="0" title="Audition Form"></iframe>
-<script>var d=document,w="https://tally.so/widgets/embed.js",v=function(){"undefined"!=typeof Tally?Tally.loadEmbeds():d.querySelectorAll("iframe[data-tally-src]:not([src])").forEach((function(e){e.src=e.dataset.tallySrc}))};if("undefined"!=typeof Tally)v();else if(d.querySelector('script[src="'+w+'"]')==null){var s=d.createElement("script");s.src=w,s.onload=v,s.onerror=v,d.body.appendChild(s);}</script>
+    <iframe data-tally-src="https://tally.so" loading="lazy" width="100%" height="100" frameborder="0" marginheight="0" marginwidth="0" title="Audition Form"></iframe>
   </div>
+
+  <script>
+    var d=document,w="https://tally.so",v=function(){"undefined"!=typeof Tally?Tally.loadEmbeds():d.querySelectorAll("iframe[data-tally-src]:not([src])").forEach((function(e){e.src=e.dataset.tallySrc}))};if("undefined"!=typeof Tally)v();else if(d.querySelector('script[src="'+w+'"]')==null){var s=d.createElement("script");s.src=w,s.onload=v,s.onerror=v,d.body.appendChild(s);}
+  </script>
 
 </body>
 </html>
